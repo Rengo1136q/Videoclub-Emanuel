@@ -39,7 +39,7 @@ public final class  ViewPantallaCliente implements ILiterales {
         if (mnuOpcion == 1) {
             ViewNuevoCliente();
         } else if (mnuOpcion == 2) {
-            
+             MnuCliente2();
         } else if (mnuOpcion == 3) {
             
         } else if (mnuOpcion == 4) {
@@ -54,6 +54,9 @@ public final class  ViewPantallaCliente implements ILiterales {
         }
     }    
     
+    /**
+     * Pantalla de Nuevo Cliente
+     */
     private static void ViewNuevoCliente() {
         
         // Declaraciíon de variables 
@@ -91,5 +94,61 @@ public final class  ViewPantallaCliente implements ILiterales {
         }
  
     }
+    
+    /**
+     * Pantalla de Eliminar Cliente
+     */
+    //// eliminar cliente
+    
+    
+    private static void MnuCliente2(){
+        
+        
+        int mnuOpcion2 = 0 ;
+        
+        System.out.println(mnuCliente2Opcion1);
+        System.out.println(mnuCliente2Opcion2);
+        System.out.println(mnuVolverMenuAnterior);
+        System.out.println("");
+        System.out.println(elegirOpcion); 
+        
+        
+        Scanner sc1 = new Scanner(System.in);
+        mnuOpcion2 = sc1.nextInt();
+        
+       SeleccionEliminarCliente(mnuOpcion2);
+    }
+    
+    
+    private static void SeleccionEliminarCliente(int mnuopcion2){
+        if (mnuopcion2 == 1){
+            BuscarCliente();
+        }else if (mnuopcion2 == 2){
+            
+        }else if (mnuopcion2 == 9) {
+            ViewPantallaPrincipal.MnuPrincipal(); 
+        }else{
+            System.out.println("La opcion ingresada no es correcta");
+            MnuCliente2();
+        }    
+            
+       
+        
+        
+    }
+    
+    private static void BuscarCliente(){
+        
+        
+        int DNI=0;
+        
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("Ingrese el documento");
+        DNI = sc1.nextInt();
+        
+        
+    }
+    
+    
 }
 

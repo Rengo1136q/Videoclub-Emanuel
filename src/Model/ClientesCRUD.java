@@ -25,6 +25,10 @@ public class ClientesCRUD {
         return true;
     }
     
+   // DeleteCliente
+    
+    
+   //
     
     
 }

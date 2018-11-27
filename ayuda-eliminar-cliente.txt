@@ -1,0 +1,13 @@
+Para eliminar cliente:
+
+1.- Buscar Cliente
+1.1 dni  --> un cliente
+1.2 Apellido --> Listado de clientes
+
+2.- Si encuentra mostrar cliente y preguntar si desea eliminarlo 
+2.1 Si se buscó por dni y se desea eliminar --> borrar
+2.2 Si se buscó por apellido y se desea eliminar uno de los clientes ---> reutilizamos 1.1 y 2.1
+
+3.- Eliminar si la respuesta anterior fue si 
+
+4.- si la respuesta fue un no, volver al menú cliente

@@ -43,4 +43,19 @@ public class ControllerClientes {
         
     }
     
+    // BuscarCliente por dni
+     public int DeletClientes(int DNI){
+         
+         
+         
+        return DNI;
+    }
+    
+        
+    // BuscarCliente por apellido
+    
+        
+   
+    // DeleteCliente
+    
 }

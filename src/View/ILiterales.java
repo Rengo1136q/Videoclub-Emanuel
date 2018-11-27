@@ -49,6 +49,17 @@ public interface ILiterales {
     public static final String realizarOtraOperacion = "¿Desea realizar otra operación (S/N): ";
     public static final String confirmacion = "¿Está seguro que desea proseguir con la operación (S/N): ";
     
+    
+    
+    /**
+     * Literarles para el menu borrar clientes
+     */
+    public static final String mnuCliente2Opcion1 = "1.- Buscar Cliente por DNI";
+    public static final String mnuCliente2Opcion2 = "2.- Buscar Cliente por Apellido";
+    
+    
+    
+    
  }
        
 
