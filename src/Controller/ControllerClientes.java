@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Controller;
 
 // importamos los paquetes del modelo
@@ -10,10 +6,7 @@ import Model.ClientesCRUD;
 import Model.ClientesDatos;  
 import java.util.InputMismatchException;
 
-/**
- *
- * @author 
- */
+
 public class ControllerClientes {
     
     //Crear constructor si es necesario instanciar el objeto

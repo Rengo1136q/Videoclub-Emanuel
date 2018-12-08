@@ -1,17 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package View;
 
 import java.util.Scanner;
 import Controller.ControllerClientes;   // Controlador - La vista lo único que ve es el controlador
 
-/**
- *
- * @author matias
- */
+
 public final class  ViewPantallaCliente implements ILiterales {
     
     public static void MnuCliente(){
@@ -106,8 +99,8 @@ public final class  ViewPantallaCliente implements ILiterales {
         
         int mnuOpcion2 = 0 ;
         
-        System.out.println(mnuCliente2Opcion1);
-        System.out.println(mnuCliente2Opcion2);
+        System.out.println(mnuEliminarCliente2Opcion1);
+        System.out.println(mnuEliminarCliente2Opcion2);
         System.out.println(mnuVolverMenuAnterior);
         System.out.println("");
         System.out.println(elegirOpcion); 
@@ -120,12 +113,12 @@ public final class  ViewPantallaCliente implements ILiterales {
     }
     
     
-    private static void SeleccionEliminarCliente(int mnuopcion2){
-        if (mnuopcion2 == 1){
-            BuscarCliente();
-        }else if (mnuopcion2 == 2){
-            
-        }else if (mnuopcion2 == 9) {
+    private static void SeleccionEliminarCliente(int mnuOpcion2){
+        if (mnuOpcion2 == 1){
+            BuscarClientePorDNI();
+        }else if (mnuOpcion2 == 2){
+            BuscarClientePorApellido();
+        }else if (mnuOpcion2 == 9) {
             ViewPantallaPrincipal.MnuPrincipal(); 
         }else{
             System.out.println("La opcion ingresada no es correcta");
@@ -137,18 +130,25 @@ public final class  ViewPantallaCliente implements ILiterales {
         
     }
     
-    private static void BuscarCliente(){
+    private static void BuscarClientePorDNI(){
         
         
         int DNI=0;
         
         Scanner sc1=new Scanner(System.in);
-        System.out.println("Ingrese el documento");
+        System.out.println("Ingrese el documento del Cliente");
         DNI = sc1.nextInt();
         
         
     }
     
-    
+    private static void BuscarClientePorApellido(){
+        
+        String a="";
+        
+        Scanner sc1=new Scanner(System.in);
+        System.out.println("Ingrese el Apellido del Cliente");
+        a = sc1.nextLine();
+    }
 }
 

@@ -1,14 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package View;
 
-/**
- *
- * @author matias
- */
+
 public interface ILiterales {
     
     /**
@@ -54,8 +47,8 @@ public interface ILiterales {
     /**
      * Literarles para el menu borrar clientes
      */
-    public static final String mnuCliente2Opcion1 = "1.- Buscar Cliente por DNI";
-    public static final String mnuCliente2Opcion2 = "2.- Buscar Cliente por Apellido";
+    public static final String mnuEliminarCliente2Opcion1 = "1.- Buscar Cliente por DNI";
+    public static final String mnuEliminarCliente2Opcion2 = "2.- Buscar Cliente por Apellido";
     
     
     
