@@ -1,15 +1,13 @@
-
 package View;
 
 import java.util.Scanner;
 
-
 public final class ViewPantallaPrincipal implements ILiterales {
-    
-    public static void MnuPrincipal(){
-        
-        int mnuOpcion = 0 ;
-        
+
+    public static void MnuPrincipal() {
+
+        int mnuOpcion = 0;
+
         System.out.println(mnuPrincipalOpcion1);
         System.out.println(mnuPrincipalOpcion2);
         System.out.println(mnuPrincipalOpcion3);
@@ -18,12 +16,12 @@ public final class ViewPantallaPrincipal implements ILiterales {
         System.out.println(mnuPrincipalOpcion6);
         System.out.println("");
         System.out.println(elegirOpcion);
-       
+
         Scanner sc1 = new Scanner(System.in);
         mnuOpcion = sc1.nextInt();
-        
+
         seleccionMenuPrincipal(mnuOpcion);
-                       
+
     }
 
     private static void seleccionMenuPrincipal(int mnuOpcion) {
@@ -43,9 +41,9 @@ public final class ViewPantallaPrincipal implements ILiterales {
         } else {
             System.out.println("La opción ingresada no es correcta .... El programa se autodetruye.");
             //wait
-            MnuPrincipal();            
+            MnuPrincipal();
         }
 
     }
-    
+
 }
