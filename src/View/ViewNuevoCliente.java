@@ -8,10 +8,6 @@ import javax.swing.InputMap;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 
-/**
- *
- * @author matias
- */
 public class ViewNuevoCliente extends javax.swing.JDialog {
 
     /**
@@ -79,6 +75,7 @@ public class ViewNuevoCliente extends javax.swing.JDialog {
             .addGap(0, 300, Short.MAX_VALUE)
         );
 
+        setTitle("Nuevo Cliente");
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 closeDialog(evt);
@@ -105,15 +102,24 @@ public class ViewNuevoCliente extends javax.swing.JDialog {
 
         jLabel3.setText("DNI");
 
+        jTextField1.setToolTipText("");
+        jTextField1.setInputVerifier(jTextField1.getInputVerifier());
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField1ActionPerformed(evt);
             }
         });
 
+        jTextField2.setInputVerifier(jTextField2.getInputVerifier());
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
+            }
+        });
+
+        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField3ActionPerformed(evt);
             }
         });
 
@@ -193,6 +199,10 @@ public class ViewNuevoCliente extends javax.swing.JDialog {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField3ActionPerformed
 
     private void doClose(int retStatus) {
         returnStatus = retStatus;
