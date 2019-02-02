@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="VideoClub">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/VideoClub.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
